@@ -5,9 +5,16 @@
 
 body {
   margin: 0;
-  background: radial-gradient(circle, #020024, #090979, #00d4ff);
+  font-family: Arial, sans-serif;
+  background: radial-gradient(
+    circle at center,
+    #0b1a3a 0%,
+    #050b1f 40%,
+    #020616 100%
+  );
   color: white;
 }
+
 
 /* MENU */
 .menu {
@@ -38,12 +45,18 @@ body {
 
 /* CARD */
 .card-info {
-  background: rgba(0,0,0,0.6);
-  padding: 30px;
+  background: linear-gradient(
+    145deg,
+    #06163a,
+    #020818
+  );
   border-radius: 20px;
+  padding: 30px;
   width: 380px;
-  text-align: center;
+  margin: auto;
+  box-shadow: 0 0 30px rgba(0, 180, 255, 0.25);
 }
+
 
 /* AVATAR */
 .avatar-container {
@@ -80,18 +93,22 @@ body {
 
 .q-btn {
   width: 100%;
-  padding: 12px;
-  border-radius: 15px;
+  padding: 14px;
+  margin: 10px 0;
   border: none;
-  cursor: pointer;
-  background: linear-gradient(90deg, #0066ff, #00eaff);
+  border-radius: 30px;
+  font-size: 15px;
   color: white;
+  cursor: pointer;
+  background: linear-gradient(90deg, #0066ff, #00e0ff);
+  box-shadow: 0 0 15px rgba(0, 180, 255, 0.6);
+  transition: transform 0.2s ease;
 }
 
-.q-content {
-  display: none;
-  margin-top: 10px;
+.q-btn:hover {
+  transform: scale(1.03);
 }
+
 
 .vermas {
   margin-top: 8px;
