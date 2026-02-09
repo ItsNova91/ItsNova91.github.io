@@ -181,3 +181,42 @@ body {
   font-size: 14px;
 }
 
+.qa {
+  margin-top: 15px;
+}
+
+.q-btn {
+  width: 100%;
+  background: linear-gradient(90deg, #0066ff, #00eaff);
+  border: none;
+  padding: 14px;
+  border-radius: 14px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.q-content {
+  display: none;
+  margin-top: 10px;
+  background: rgba(255,255,255,0.05);
+  padding: 15px;
+  border-radius: 12px;
+}
+
+.vermas {
+  margin-top: 10px;
+  background: transparent;
+  border: 1px solid #00eaff;
+  color: #00eaff;
+  padding: 6px 12px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.more {
+  display: none;
+  margin-top: 10px;
+  font-size: 14px;
+  opacity: 0.9;
+}
