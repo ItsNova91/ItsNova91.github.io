@@ -17,33 +17,63 @@
 
   <!-- INFORMACIÓN -->
 <section id="info" class="seccion activa">
-  <div class="perfil">
-    <img src="perfil.png" alt="Avatar">
-    <h1>ITSNOVA91</h1>
-  </div>
+  <div class="card-info">
 
-  <h2 class="titulo">INFORMACIÓN</h2>
+    <h1 class="nombre">ITSNOVA91</h1>
+    <h2 class="sub">INFORMACIÓN</h2>
 
-  <p class="intro">
-    Hola amiguito, te habla <b>ItsNova91</b>, un Tiktoker en progreso.
-  </p>
+    <!-- BLOQUE -->
+    <div class="qa">
+      <button class="q-btn" onclick="toggleQ(this)">
+        ¿Cuál es mi nombre?
+      </button>
 
-  <button class="btn-info" onclick="toggleInfo()">Ver más</button>
+      <div class="q-content">
+        <p>Mi nombre real es <b>Matias</b>.</p>
+        <button class="vermas" onclick="toggleMore(this)">Ver más</button>
+        <div class="more">
+          <p>Uso el nombre Nova desde hace años en comunidades gaming.</p>
+        </div>
+      </div>
+    </div>
 
-  <div id="extraInfo" class="extra oculto">
-    <p>📛 <b>Nombre real:</b> Matias</p>
-    <p>🤝 <b>Mejor amigo:</b> Pro_black047</p>
-    <p>🎮 <b>Influencer favorito:</b> Los Bros</p>
-    <p>🎂 <b>Edad:</b> 13 años (10 junio 2012)</p>
-    <p>🌎 <b>País:</b> Colombia (Barranquilla)</p>
+    <!-- BLOQUE -->
+    <div class="qa">
+      <button class="q-btn" onclick="toggleQ(this)">
+        ¿Quién es mi mejor amigo?
+      </button>
 
-    <p class="skills">
-      💻 Developer de Discord (Semi-Profesional)<br>
-      🎮 Modelador en Roblox Studio (Avanzado)<br>
-      🧠 Scripter Roblox (Avanzado)
-    </p>
+      <div class="q-content">
+        <p>Mi mejor amigo es <b>Pro_black047</b>.</p>
+        <button class="vermas" onclick="toggleMore(this)">Ver más</button>
+        <div class="more">
+          <p>Lo conozco desde hace más de 2 años y es mi persona de confianza.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- BLOQUE -->
+    <div class="qa">
+      <button class="q-btn" onclick="toggleQ(this)">
+        ¿Qué habilidades tengo?
+      </button>
+
+      <div class="q-content">
+        <p>Trabajo en desarrollo y creación.</p>
+        <button class="vermas" onclick="toggleMore(this)">Ver más</button>
+        <div class="more">
+          <ul>
+            <li>Developer Discord (Semi-Pro)</li>
+            <li>Modelador Roblox Studio (Avanzado)</li>
+            <li>Scripter Roblox (Avanzado)</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
   </div>
 </section>
+
   
   <!-- OTRAS SECCIONES (VACÍAS POR AHORA) -->
   <section id="roblox" class="seccion">Próximamente Roblox Studio</section>
