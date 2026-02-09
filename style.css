@@ -16,6 +16,13 @@ body {
   color: white;
 }
 
+.center {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 
 /* MENU */
 .menu {
@@ -50,17 +57,17 @@ body {
 
 /* CARD */
 .card-info {
-  background: linear-gradient(145deg, #06163a, #020818);
-  border-radius: 20px;
-  padding: 30px;
   width: 380px;
+  padding: 30px;
+  border-radius: 20px;
+
+  background: linear-gradient(145deg, #06163a, #020818);
+  box-shadow: 0 0 30px rgba(0, 180, 255, 0.25);
 
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-
-  box-shadow: 0 0 30px rgba(0, 180, 255, 0.25);
 }
 
 /* AVATAR */
