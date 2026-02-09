@@ -6,10 +6,6 @@
 body {
   margin: 0;
   min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
   font-family: Arial, sans-serif;
   background: radial-gradient(
     circle at center,
@@ -23,11 +19,15 @@ body {
 
 /* MENU */
 .menu {
+  position: fixed;
+  top: 20px;
+  width: 100%;
   display: flex;
   justify-content: center;
   gap: 15px;
-  padding: 20px;
+  z-index: 100;
 }
+
 
 .menu button {
   background: linear-gradient(90deg, #007bff, #00eaff);
@@ -62,7 +62,6 @@ body {
 
   box-shadow: 0 0 30px rgba(0, 180, 255, 0.25);
 }
-
 
 /* AVATAR */
 ..avatar-container {
