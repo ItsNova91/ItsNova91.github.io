@@ -1,17 +1,15 @@
 * {
-  margin: 0;
-  padding: 0;
-  font-family: Arial, sans-serif;
   box-sizing: border-box;
+  font-family: Arial, sans-serif;
 }
 
 body {
-  background: radial-gradient(circle, #0a0f3c, #02010a);
+  margin: 0;
+  background: radial-gradient(circle, #020024, #090979, #00d4ff);
   color: white;
-  min-height: 100vh;
 }
 
-/* MENÚ */
+/* MENU */
 .menu {
   display: flex;
   justify-content: center;
@@ -20,195 +18,81 @@ body {
 }
 
 .menu button {
-  background: linear-gradient(135deg, #2a3cff, #00d4ff);
+  background: linear-gradient(90deg, #007bff, #00eaff);
   border: none;
-  padding: 10px 20px;
-  border-radius: 15px;
   color: white;
-  font-weight: bold;
+  padding: 10px 18px;
+  border-radius: 20px;
   cursor: pointer;
-  transition: 0.3s;
-}
-
-.menu button:hover {
-  transform: scale(1.1);
 }
 
 /* SECCIONES */
 .seccion {
   display: none;
-  text-align: center;
-  padding: 30px;
+  justify-content: center;
 }
 
 .seccion.activa {
-  display: block;
+  display: flex;
 }
 
-/* PERFIL */
-.perfil img {
-  width: 140px;
-  border-radius: 50%;
-  border: 4px solid #00eaff;
-  box-shadow: 0 0 20px #00eaff;
-}
-
-.perfil h1 {
-  margin-top: 15px;
-  font-size: 32px;
-}
-
-/* TARJETAS */
-.cards {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 15px;
-  margin-top: 30px;
-}
-
-.card {
-  background: rgba(0,0,0,0.6);
-  padding: 15px;
-  border-radius: 15px;
-  box-shadow: 0 0 15px rgba(0, 234, 255, 0.3);
-}
-
-.titulo {
-  margin-top: 20px;
-  font-size: 28px;
-}
-
-.intro {
-  margin: 15px auto;
-  max-width: 500px;
-}
-
-.btn-info {
-  margin-top: 15px;
-  padding: 10px 20px;
-  border-radius: 15px;
-  border: none;
-  cursor: pointer;
-  font-weight: bold;
-  background: linear-gradient(135deg, #00eaff, #2a3cff);
-  color: white;
-}
-
-.extra {
-  margin-top: 25px;
-  background: rgba(0,0,0,0.6);
-  padding: 20px;
-  border-radius: 15px;
-  box-shadow: 0 0 20px rgba(0,234,255,0.4);
-  animation: aparecer 0.6s ease;
-}
-
-.oculto {
-  display: none;
-}
-
-.skills {
-  margin-top: 15px;
-  color: #00eaff;
-}
-
-@keyframes aparecer {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
+/* CARD */
 .card-info {
-  max-width: 520px;
-  margin: 60px auto;
-  padding: 35px;
-  background: linear-gradient(180deg, #050b2e, #020617);
-  border-radius: 25px;
-  box-shadow: 0 0 40px rgba(0,234,255,0.25);
+  background: rgba(0,0,0,0.6);
+  padding: 30px;
+  border-radius: 20px;
+  width: 380px;
   text-align: center;
 }
 
-.avatar img {
-  width: 140px;
-  border-radius: 50%;
-  box-shadow: 0 0 25px #00eaff;
+/* AVATAR */
+.avatar-container {
+  display: flex;
+  justify-content: center;
   margin-bottom: 15px;
 }
 
+.avatar {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  border: 4px solid cyan;
+}
+
+/* TEXTO */
 .nombre {
-  font-size: 32px;
-  letter-spacing: 2px;
+  margin: 10px 0 5px;
 }
 
 .sub {
-  color: #00eaff;
-  margin-bottom: 10px;
+  color: cyan;
+  margin-bottom: 20px;
 }
 
-.descripcion {
-  font-size: 15px;
-  opacity: 0.85;
-}
-
-.lista {
-  list-style: none;
-  padding: 0;
-  margin-top: 20px;
-  text-align: left;
-}
-
-.lista li {
-  padding: 6px 0;
-  border-bottom: 1px solid rgba(255,255,255,0.08);
-}
-
-.skills {
-  margin-top: 20px;
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-}
-
-.skills span {
-  background: rgba(0,234,255,0.15);
-  padding: 8px;
-  border-radius: 10px;
-  font-size: 14px;
-}
-
+/* QA */
 .qa {
-  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
 .q-btn {
   width: 100%;
-  background: linear-gradient(90deg, #0066ff, #00eaff);
+  padding: 12px;
+  border-radius: 15px;
   border: none;
-  padding: 14px;
-  border-radius: 14px;
-  color: white;
-  font-size: 16px;
   cursor: pointer;
+  background: linear-gradient(90deg, #0066ff, #00eaff);
+  color: white;
 }
 
 .q-content {
   display: none;
   margin-top: 10px;
-  background: rgba(255,255,255,0.05);
-  padding: 15px;
-  border-radius: 12px;
 }
 
 .vermas {
-  margin-top: 10px;
-  background: transparent;
-  border: 1px solid #00eaff;
-  color: #00eaff;
+  margin-top: 8px;
+  background: #00c3ff;
+  border: none;
   padding: 6px 12px;
   border-radius: 10px;
   cursor: pointer;
@@ -216,7 +100,6 @@ body {
 
 .more {
   display: none;
-  margin-top: 10px;
-  font-size: 14px;
-  opacity: 0.9;
+  margin-top: 8px;
 }
+
